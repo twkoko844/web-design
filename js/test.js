@@ -1,4 +1,4 @@
-function koshin(){
-    var hiduke=document.lastModified;
-    document.write(hiduke);
+function mod_at(){
+    var date=document.lastModified;
+    document.write(date);
 }

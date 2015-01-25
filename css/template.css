@@ -1,28 +1,96 @@
 @charset "utf-8"
 
 html{
-	height: auto;
+    height: auto;
 }
 
 body{
-	background-color: rgb(220,220,220);
-	height: 100%;
-	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	position: relative;
+    background-color: rgb(200,200,200);
+    height: 100%;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+h1{
+    background-color: white;
+}
+h2 {
+    color: #444;
+    margin-left: 30px;
 }
 
-p {
-	color:blue;
-	line-height:1.5;
+.img {
+    box-shadow: 3px 3px 3px rgb(150,150,150);
+}
+
+div.header_menu {
+    width: 960px;
+    margin: 0 auto;
+}
+div.header_menu ul {
+    /* background: -webkit-gradient(linear, left top, left bottom,from(rgba(60,100,50,0.5)),to(#066)); */
+    padding: 3px;
+    width: 0 auto;
+    margin: 0 auto;
+    height: 35px;
+}
+div.header_menu ul li{
+    background-color: #eeeeee;
+    border-right: 1px dotted;
+    border-left: 1px dotted;
+    float: left;     /*リスト項目を横に並べる*/
+    display: block;
+    list-style-type: none;       /*リストマーカー無しにする*/
+    background-repeat: no-repeat;        /*背景画像を繰り返さない*/
+    width: 16.4%;
+    margin-top: 1px;
+    height: 100%;
+    box-shadow: 3px 3px 3px black;
+}
+
+div.header_menu ul li:hover{
+    background: rgb(160,160,160);
+}
+
+div.header_menu ul li a{
+    font-size: 130%;
+    display: block;/*リンクをブロック表示にする*/
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;  /*リンクの下線を無くす*/
+}
+
+div.header_menu ul li p{
+    margin: 0;
+    font-size: 130%;
+    padding: 4px;
+    text-align: center;
+}
+
+div.container{
+    position:relative;
+    margin: 0 auto;
+    padding-bottom: 20px; 
+    width: 960px;
+    /* background-color: white; */
 }
 
 div.box{
-    position:relative;
-    margin: 0 auto;
+    /* position:relative; */
+    margin: 0 30px;
     padding: 10px;
     border-radius: 4px;
     background-color: white;
 }
+
+div.main {
+    
+}
+
+div.main h3 {
+    border-bottom: solid 1px;
+}
+
 div.form{
     width: 350px;
     padding: 0 12px;
