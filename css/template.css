@@ -6,6 +6,7 @@ html{
 
 body{
 	background-color: rgb(220,220,220);
+	height: 100%;
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	position: relative;
 }
@@ -19,13 +20,15 @@ div.box{
     position:relative;
     margin: 0 auto;
     padding: 10px;
+    border-radius: 4px;
     background-color: white;
 }
 div.form{
     width: 350px;
     padding: 0 12px;
     margin: 0 auto;
-    background-color: blue;
+    border-radius: 10px;
+    background-color: rgb(220,220,220);
 }
 div.form p{
     color: black;
