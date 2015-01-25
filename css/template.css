@@ -5,9 +5,6 @@ html{
 }
 
 body{
-	//margin: 0px;
-	//padding: 0px;
-	height: 100%;
 	background-color: rgb(220,220,220);
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	position: relative;
@@ -16,4 +13,20 @@ body{
 p {
 	color:blue;
 	line-height:1.5;
+}
+
+div.box{
+    position:relative;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+div.form{
+    width: 350px;
+    padding: 0 12px;
+    margin: 0 auto;
+    background-color: blue;
+}
+div.form p{
+    color: black;
 }
