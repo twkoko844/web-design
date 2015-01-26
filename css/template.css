@@ -12,9 +12,8 @@ body{
     position: relative;
     background-color: rgb(30,30,30);
     color: white;
-    min-width: 960px;
     margin-top: -100px;
-    padding-top: 150px;
+    padding-top: 220px; /* 100(marginを相殺) + メニューの高さ */
 }
 h1{
     background-color: white;
@@ -23,43 +22,52 @@ h2 {
     margin-left: 30px;
 }
 
-.img {
-}
 div.wrapper.clearfix{
+    display: inline-block;
+    text-align: center;
     z-index: 9999;
     top: 0;
     position: fixed;
-    width: auto;
-    margin: 0 -500%;
-    padding: 0 500%;
+    width:100%;
+    height: 105px; /* logoと同じ大きさに */
+    margin: 0 auto;
     background-color: rgb(30,30,30);
+    min-width: 1006px;
 }
+div.wrapper.clearfix img {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
 div.menu {
+    position: absolute;
+    left: 450px;
+    bottom: 0;
     display: inline-block;
-    margin: 0 30px;
+    margin-left: 0px;
+    width: 630px;
 }
 div.menu ul {
     /* background: -webkit-gradient(linear, left top, left bottom,from(rgba(60,100,50,0.5)),to(#066)); */
-    padding: 3px;
+    padding: 0;
     width: 0 auto;
     margin: 0 auto;
     height: 35px;
 }
 div.menu ul li{
     margin: 0;
-    display: inline-block;
-    list-style-type: none;       /*リストマーカー無しにする*/
-    background-repeat: no-repeat;        /*背景画像を繰り返さない*/
-    width: 120px;
     margin-top: 1px;
+    display: inline-block;
+    list-style-type: none;
+    background-repeat: no-repeat;        /*背景画像を繰り返さない*/
+    width: 19%;
     height: 100%;
     /* box-shadow: 3px 3px 3px black; */
 }
-
 div.menu ul li:hover{
     background: rgb(160,160,160);
 }
-
 div.menu ul li *{
     display: block;
     color: white;
@@ -80,8 +88,9 @@ div.pagewrap{
 div.header{
     background: url(../img/header.jpg) no-repeat center;
     background-size: 100% auto;
-    height: 350px;
+    height: 320px;
     width: auto;
+    margin-bottom: 20px;
 }
 div.box{
     /* position:relative; */
@@ -109,19 +118,16 @@ div.side {
     padding: 0;
     border: 1px solid;
 }
-
 div.side h3{
     border-bottom: solid 1px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
 }
-
 div.side ul{
     margin: 0;
     padding: 0 10px 5px;
 }
-
 div.side ul li{
     list-style-type: none;
     display: block;
