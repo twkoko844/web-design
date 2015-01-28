@@ -1,58 +1,116 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/template.css">
-    <script type="text/javascript" src="js/test.js"></script>
-    <title>Web-design</title>
-</head>
-<body>
-<div class="wrapper clearfix">
-    <img src="img/logo.jpg" alt="logo" class="img">
-<!-- menu -->
-    <div class="menu">
-        <ul>
-            <li id="menu1"><p>TOP</p></li>
-            <li id="menu2"><a href="http://google.co.jp">menu2</a></li>
-            <li id="menu3"><a href="#">menu3</a></li>
-            <li id="menu4"><a href="#">menu4</a></li>
-            <li id="menu5"><a href="#">menu5</a></li>
-        </ul>
-    </div>
-<!-- menu end -->
-</div>
-<!-- pagewrap -->
-    <div class="pagewrap">
-    <!-- <h2>h2見出し</h2> -->
-    <!-- header -->
-    <div class="header">
-        <p></p>
-    </div>
-    <div class="box">
-    <!-- sidebar -->
-        <div class="main">
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <h3>h3見出し</h3>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </div><!-- main end -->
-        
-    <script>
-        mod_at();
-    </script>
-    </div><!-- box end -->
-    </div><!-- pagewrap end -->
-</body>
+    <head>
+        <title>Web-design</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <script type="text/javascript" src="js/test.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </head>
+    <body>
+        <!-- <p>Hello world!</p> -->
+        <div id="header" class="gwrapper">
+            <div class="wrapper">
+                <img src="img/logo3.jpg" alt="logo">
+                <div id="gnav">
+                    <ul>
+                        <li><a>TOP</a></li>
+                        <li><a href="http://google.co.jp">menu2</a></li>
+                        <li><a href="http://www.yahoo.co.jp/">menu3</a></li>
+                        <li><a href="https://www.amazon.co.jp/">menu4</a></li>
+                        <li><a href="https://www.youtube.com/">menu5</a></li>
+                    </ul>
+                </div><!-- gnav end -->
+            </div><!-- wraper end -->
+        </div><!-- header end -->
+        <div class="gwrapper" style="margin-top: 55px;">
+            <div id="news" class="wrapper">
+                <h2>NEWS</h2>
+                <ul class="list-box">
+                    <li>
+                        <a href="http://light-the-way.jp/">LIGHT THE WAY</a>
+                    </li>
+                    <li>
+                        <a href="http://google.co.jp"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.yahoo.co.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.co.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.nicovideo.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.senshu-u.ac.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.uchida-ah.com/"><img src="img/box_img.jpg" alt="jacket"></a>
+                    </li>
+                </ul>
+            </div><!-- news wrapper end -->
+            <div id="works" class="wrapper">
+                <h2>WORKS</h2>
+                <div class="box">
+                    <h3>h3 見出し</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <h3>h3 見出し</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p><h3>h3 見出し</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <h3>h3 見出し</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <h3>h3 見出し</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p><h3>h3 見出し</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div><!-- box end -->
+            </div><!-- works wrapper end -->
+        </div><!-- no name end -->
+        <div id="footer" class="gwrapper">
+            <div class="wrapper">
+                <p>COPYRIGHT Koki Yoshida ALL RIGHT RESERVED.</p>
+            </div><!-- wrapper end -->
+        </div><!-- footer end -->
+        <script>mod_at();</script>
+    </body>
 </html>
