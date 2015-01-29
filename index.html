@@ -11,8 +11,22 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/common.css">
         <script type="text/javascript" src="js/test.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <!-- bxSlider Javascript file -->
+        <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                    auto: true,
+                    pause: 5000,
+                    speed: 800
+                });
+            });
+        </script>
+
     </head>
     <body>
         <!-- <p>Hello world!</p> -->
@@ -31,6 +45,13 @@ and open the template in the editor.
             </div><!-- wraper end -->
         </div><!-- header end -->
         <div class="gwrapper" style="margin-top: 55px;">
+            <div id="slideshow" class="wrapper">
+                <ul class="bxslider">
+                    <li><img src="img/slideimage1.jpg" alt="slide1"/></li>
+                    <li><img src="img/slideimage2.jpg" alt="slide2"/></li>
+                    <li><img src="img/slideimage3.jpg" alt="slide3"/></li>
+                </ul>
+            </div>
             <div id="news" class="wrapper">
                 <h2>NEWS</h2>
                 <ul class="list-box">

@@ -15,5 +15,4 @@ Editor:netBeans8.0.2
 
 2015/01/27: Change Editor
 
-2015/01/29: Complete web template
-a
+2015/01/29: Add slider

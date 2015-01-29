@@ -140,3 +140,9 @@ body {
     padding-bottom: 5px;
     margin: 0;
 }
+
+.bx-wrapper {
+    width: 960px; /* 画像と同じpx = 960 */
+    margin: 0 auto;
+    position: relative;
+}
