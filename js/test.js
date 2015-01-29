@@ -9,3 +9,6 @@ function mod_at(){
     var date=document.lastModified;
     document.write(date);
 }
+function hello(){
+    document.write("Hello World!");
+}

@@ -13,9 +13,9 @@ and open the template in the editor.
         <script type="text/javascript" src="js/test.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- bxSlider Javascript file -->
-        <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
         <!-- bxSlider CSS file -->
-        <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
     </head>
     <body>
         <!-- <p>Hello world!</p> -->
@@ -123,6 +123,7 @@ and open the template in the editor.
         </div><!-- footer end -->
         <script>mod_at();</script>
         <script type="text/javascript">
+        jQuery(document).ready(function($){
             $(document).ready(function(){
                 $('.bxslider').bxSlider({
                     auto: true,
@@ -131,6 +132,7 @@ and open the template in the editor.
                     autoControls: true
                 });
             });
+        });
         </script>
     </body>
 </html>
