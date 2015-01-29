@@ -5,7 +5,8 @@
 <title>PHP test</title>
 </head>
 <body>
-<?php echo "<p>Hello PHP World!</p>";
+<?php
+echo "<p>Hello PHP World!</p>";
 ?>
 </body>
 </html>
