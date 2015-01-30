@@ -68,8 +68,7 @@ body {
     line-height:45px; /* 要素と同じ高さ = 45px */
 }
 #gnav li:hover{
-    background-color: rgb(160,160,160);
-}
+    background-color: rgb(160,160,160);}
 #gnav a {
     display: block;
     color: white;
@@ -98,6 +97,7 @@ body {
 .list-box li {
     float: left;
     display: list-item;
+    position: relative;
     list-style: none;
     width: 230px;
     height: 230px;
@@ -145,4 +145,40 @@ body {
     width: 960px; /* 画像と同じpx = 960 */
     margin: 0 auto;
     position: relative;
+}
+
+.description {
+    background-color: black;
+    position: absolute;
+    bottom: -80px;
+    width: 220px;
+    height: 80px;
+    display: block;
+    padding: 0 5px;
+    opacity: 0.6;
+}
+
+.description h3 {
+    font-size: 16px;
+    line-height: normal;
+    width: auto;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px rgb(80,50,50) solid;
+}
+
+.description ul {
+    overflow: hidden;
+    width: auto;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+}
+.description li {
+    font-size: 12px;
+    float: left;
+    width: auto;
+    height: 100%;
+    line-height: normal; /* list-boxのを打ち消す */
+    margin: 0 10px 0;
 }

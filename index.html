@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/common.css">
-        <script type="text/javascript" src="js/test.js"></script>
+        <script type="text/javascript" src="js/comn.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- bxSlider Javascript file -->
         <script src="js/jquery.bxslider.min.js"></script>
@@ -45,28 +45,96 @@ and open the template in the editor.
                 <h2>NEWS</h2>
                 <ul class="list-box">
                     <li>
-                        <a href="http://light-the-way.jp/">LIGHT THE WAY</a>
+                        <a href="http://light-the-way.jp/">LIGHT THE WAY<div class="description">
+                                <h3>LIGHT THE WAY TOP</h3>
+                                <ul>
+                                    <li>2015</li>
+                                    <li>link</li>
+                                </ul>
+                            </div></a>
                     </li>
                     <li>
-                        <a href="http://google.co.jp"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="http://google.co.jp">
+                        <img src="img/box_img.jpg" alt="jacket">
+                            <div class="description">
+                                <h3>GOOGLE</h3>
+                                <ul>
+                                    <li>2015</li>
+                                    <li>link</li>
+                                </ul>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <a href="http://www.yahoo.co.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="http://www.yahoo.co.jp/">
+                        <img src="img/box_img.jpg" alt="jacket">
+                            <div class="description">
+                                <h3>YAHOO</h3>
+                                <ul>
+                                    <li>2015</li>
+                                    <li>link</li>
+                                </ul>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.amazon.co.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="https://www.amazon.co.jp/">
+                        <img src="img/box_img.jpg" alt="jacket">
+                        <div class="description">
+                                    <h3>AMAZON</h3>
+                                    <ul>
+                                        <li>2015</li>
+                                        <li>link</li>
+                                    </ul>
+                                </div>
+                            </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="https://www.youtube.com/">
+                        <img src="img/box_img.jpg" alt="jacket">
+                        <div class="description">
+                                    <h3>YOUTUBE</h3>
+                                    <ul>
+                                        <li>2015</li>
+                                        <li>link</li>
+                                    </ul>
+                                </div>
+                            </a>
                     </li>
                     <li>
-                        <a href="http://www.nicovideo.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="http://www.nicovideo.jp/">
+                        <img src="img/box_img.jpg" alt="jacket">
+                        <div class="description">
+                                    <h3>ニコニコ動画</h3>
+                                    <ul>
+                                        <li>2015</li>
+                                        <li>link</li>
+                                    </ul>
+                                </div>
+                            </a>
                     </li>
                     <li>
-                        <a href="http://www.senshu-u.ac.jp/"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="http://www.senshu-u.ac.jp/">
+                        <img src="img/box_img.jpg" alt="jacket"><div class="description">
+                                    <h3>専修大学 TOP</h3>
+                                    <ul>
+                                        <li>2015</li>
+                                        <li>link</li>
+                                    </ul>
+                                </div>
+                            </a>
                     </li>
                     <li>
-                        <a href="http://www.uchida-ah.com/"><img src="img/box_img.jpg" alt="jacket"></a>
+                        <a href="http://www.uchida-ah.com/">
+                        <img src="img/box_img.jpg" alt="jacket">
+                        <div class="description">
+                                    <h3>ウチダ病院</h3>
+                                    <ul>
+                                        <li>2015</li>
+                                        <li>link</li>
+                                    </ul>
+                                </div>
+                            </a>
                     </li>
                 </ul>
             </div><!-- news wrapper end -->
@@ -122,7 +190,10 @@ and open the template in the editor.
             </div><!-- wrapper end -->
         </div><!-- footer end -->
         <script>mod_at();</script>
+        
+        <!-- scripts -->
         <script type="text/javascript">
+<!--
         jQuery(document).ready(function($){
             $(document).ready(function(){
                 $('.bxslider').bxSlider({
@@ -133,6 +204,16 @@ and open the template in the editor.
                 });
             });
         });
+-->
+        </script>
+        <!-- scripts -->
+        <script type="text/javascript">
+<!--
+            $('.list-box > li').hover(function(){
+                $(".description", this).stop().animate({bottom:'0px'},{queue:false,duration:160});}, function() {
+                    $(".description", this).stop().animate({bottom:'-80px'},{queue:false,duration:160});
+            });
+-->
         </script>
     </body>
 </html>
