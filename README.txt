@@ -6,7 +6,7 @@ Editor:sakuraEditor
 
 ↓
 
-Editor:netBeans8.0.2
+Editor:netBeans8.0.2, CotEdidtor2.0.3
 
 --Update--
 2015/01/25: Start this project.
