@@ -68,7 +68,8 @@ body {
     line-height:45px; /* 要素と同じ高さ = 45px */
 }
 #gnav li:hover{
-    background-color: rgb(160,160,160);}
+    background-color: rgb(160,160,160);
+}
 #gnav a {
     display: block;
     color: white;
