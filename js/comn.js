@@ -12,3 +12,20 @@ function mod_at(){
 function hello(){
     document.write("Hello World!");
 }
+
+window.onload = function(){
+    jQuery(document).ready(function($){
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                pause: 5000,
+                speed: 800,
+                autoControls: true
+            });
+            $('.list-box > li').hover(function(){
+                $(".description", this).stop().animate({bottom:'0px'},{queue:false,duration:160});}, function() {
+                    $(".description", this).stop().animate({bottom:'-80px'},{queue:false,duration:160});
+            });
+        });
+    });//jquery ready end
+};//onload end
