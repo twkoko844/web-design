@@ -10,21 +10,30 @@ function mod_at(){
     document.write(date);
 }
 function hello(){
-    document.write("Hello World!");
+    document.write("Hello js World!");
 }
 
 window.onload = function(){
     jQuery(document).ready(function($){
         $(document).ready(function(){
+            /* insert jQuery code */
+            //bxslider
             $('.bxslider').bxSlider({
                 auto: true,
                 pause: 5000,
                 speed: 800,
                 autoControls: true
             });
-            $('.list-box > li').hover(function(){
-                $(".description", this).stop().animate({bottom:'0px'},{queue:false,duration:160});}, function() {
-                    $(".description", this).stop().animate({bottom:'-80px'},{queue:false,duration:160});
+            //description animation
+            $('.list-box > li').hover(function(){   //id=list-boxの子要素のliを取得,hoverした時にfunction
+                $(".description", this).stop().animate(     //class=descriptionのアニメーション
+                    {bottom:'0px'},                         //li要素のbottom 0pxで止める
+                    {queue:false,duration:160});},          //queue=他のアニメーションの終了を待たない duration=アニメーションの早さ0.16s
+                    function() {
+                        $(".description", this).stop().animate(     //hoverでないとき
+                            {bottom:'-80px'},                       //LI要素-80PXで止める
+                            {queue:false,duration:160}              //キュー無効, アニメーション早さ0.16s
+                        );
             });
         });
     });//jquery ready end
