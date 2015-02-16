@@ -69,7 +69,7 @@ body {
 
 #gnav {
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
     float: right;
     width: 610px;
     height: 45px;
@@ -80,7 +80,7 @@ body {
 }
 #gnav ul {
     list-style: none;
-    overflow: hidden;   /* liのfloat崩れ解除 */
+    /* overflow: hidden; */   /* liのfloat崩れ解除 */
     height: 100%;
     margin: 0;
     padding: 0;
@@ -115,13 +115,13 @@ body {
 }
 
 .list-box {
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
 }
 .list-box li {
     display: list-item;
     list-style: none;
-    overflow: hidden;
+    overflow: hidden;   /* 必要 */
     position: relative;
     float: left;
     width: 230px;
@@ -149,7 +149,7 @@ body {
 .box {
     padding: 10px;
     border-radius: 4px;
-    background-color: rgb(244,244,242);
+    background-color: rgb(244,244,242); /* #f4f4f2 */
     color: black;
 }
 
@@ -235,4 +235,18 @@ body {
     text-decoration:none;
     display:block;
     cursor:pointer;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after{
+  content:"";
+  display: table;
+}
+.cf:after{
+  clear:both;
+}
+/*IE6,7対策 （haslayout対策）*/
+.cf{
+  *zoom:1;
 }
