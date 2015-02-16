@@ -150,6 +150,8 @@ body {
 .box {
     padding: 10px;
     border-radius: 4px;
+    -webkit-border-radius: 4px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 4px;   /* Firefox用 */
     background-color: rgb(244,244,242); /* #f4f4f2 */
     color: black;
 }
@@ -226,6 +228,8 @@ body {
     transition:all 0.3s;
     opacity: 0.6;
     border-radius: 8px;
+    -webkit-border-radius: 8px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 8px;   /* Firefox用 */
 }
 #page-top p:hover{
     /* background:#8b8b8b; */

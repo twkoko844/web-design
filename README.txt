@@ -25,6 +25,8 @@ Editor:netBeans8.0.2, CotEdidtor2.0.3
 2015/02/16: Add scroll-top button jquery
 
 2015/02/16: Add clearfix
+
+2015/02/16: Add scroll-bottom button jquery
 =======
 2015/02/11: Update logo and add cute design
 >>>>>>> 2f4591e42e974eb8eb8a572a9e189d88450d3fbe
