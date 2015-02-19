@@ -43,7 +43,7 @@ window.onload = function(){
                 //最下部から現在位置までの距離を計算して、変数[under]に格納
                 var under = $('body').height() - (now + $(window).height());
                 //最上部から現在位置までの距離(now)が50以上かつ//最下部から現在位置までの距離(under)が0px以上だったら
-                if(now > 50 && under > 0){
+                if(now > 50){
                     //[#page-top]をゆっくりフェードインする
                     $('#page-top').fadeIn('slow');
                     //それ以外だったらフェードアウトする
