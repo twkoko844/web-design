@@ -34,7 +34,7 @@
     -webkit-box-shadow: 0 0 5px #ccc;
     box-shadow: 0 0 5px #ccc; 削除 */
     /* border:  5px solid #fff; 削除 */
-    left: -5px;
+    /* left: -5px; 削除 */
     /* background: #fff; 削除 */
     
     /*fix other elements on the page moving (on Chrome)*/
