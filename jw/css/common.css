@@ -292,3 +292,12 @@ a.desc {
     font-size: 18px;
     line-height: 35px;
 }
+
+#footer ul {
+    font-size: 0;
+}
+#footer li{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+}
