@@ -31,7 +31,7 @@ window.onload = function(){
                     {queue:false,duration:160});},          //queue=他のアニメーションの終了を待たない duration=アニメーションの早さ0.16s
                     function() {
                         $(".description", this).stop().animate(     //hoverでないとき
-                            {bottom:'-80px'},                       //LI要素-80PXで止める
+                            {bottom:'-80px'},                       //li要素-80PXで止める
                             {queue:false,duration:160}              //キュー無効, アニメーション早さ0.16s
                         );
             });
