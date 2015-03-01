@@ -41,7 +41,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
     background-color: rgb(30,30,30);
     color: white;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
@@ -157,9 +156,10 @@ body {
 }
 
 #footer {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border-top: white solid 1px; 
-    /* padding-bottom: 5px; */
+    padding-bottom: 10px;
+    background-color: rgb(134,129,112); /* #868170 */
 }
 #footer p {
     margin: 0;
@@ -254,4 +254,9 @@ body {
 /*IE6,7対策 （haslayout対策）*/
 .cf {
     *zoom:1;
+}
+
+.container {
+    background-color:white;
+    color: black;
 }
