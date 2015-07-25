@@ -17,6 +17,26 @@ window.onload = function(){
     jQuery(document).ready(function($){
         $(document).ready(function(){
             /* insert jQuery code */
+            
+            
+            //loading
+            var h = $(window).height();
+            $('#wrap, .bx-prev, .bx-next').css('display','none');
+            $('#loader-bg ,#loader').height(h).css('display','block');
+            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loader, .bx-controls-direction').delay(600).fadeOut(300);
+            $('#wrap').css('display', 'block');
+            $(function(){
+                setTimeout('stopload()',10000);
+            });
+            function stopload(){
+                $('#wrap, .bx-prev, .bx-next').css('display','block');
+                $('#loader-bg').delay(900).fadeOut(800);
+                $('#loader').delay(600).fadeOut(300);
+            }
+            //loading end
+            
+            
             //bxslider
             $('.bxslider').bxSlider({
                 auto: true,
