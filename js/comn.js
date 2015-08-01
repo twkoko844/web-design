@@ -20,7 +20,7 @@ window.onload = function(){
             
             //loading
             var h = $(window).height();
-            $('#minheader').css('top','-75px');
+            $('#minheader').css('top','-50px');
             $('#wrap').css('display','none');
             $('#loader-bg ,#loader').height(h).css('display','block');
             $('#loader-bg').delay(900).fadeOut(800);
@@ -71,11 +71,10 @@ window.onload = function(){
                 }
                 
                 //minheader
-                if(now > 60){
-                    $('#minheader').css('top','0px');
-                    $('#minheader').slideDown('fast');
+                if(now > 50){
+                    $('#minheader').animate({top: '0px'},{queue:false, duration: 200});
                 }else{
-                    $('#minheader').slideUp('fast');
+                    $('#minheader').animate({top: '-50px'},{queue:false, duration: 200});
                 }
             });
             //ボタン(id:move-page-top)のクリックイベント
