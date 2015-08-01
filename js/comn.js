@@ -18,13 +18,13 @@ window.onload = function(){
         $(document).ready(function(){
             /* insert jQuery code */
             
-            
             //loading
             var h = $(window).height();
-            $('#wrap, .bx-prev, .bx-next').css('display','none');
+            $('#minheader').css('top','-75px');
+            $('#wrap').css('display','none');
             $('#loader-bg ,#loader').height(h).css('display','block');
             $('#loader-bg').delay(900).fadeOut(800);
-            $('#loader, .bx-controls-direction').delay(600).fadeOut(300);
+            $('#loader').delay(600).fadeOut(300);
             $('#wrap').css('display', 'block');
             $(function(){
                 setTimeout('stopload()',10000);
@@ -35,7 +35,6 @@ window.onload = function(){
                 $('#loader').delay(600).fadeOut(300);
             }
             //loading end
-            
             
             //bxslider
             $('.bxslider').bxSlider({
@@ -69,6 +68,14 @@ window.onload = function(){
                     //それ以外だったらフェードアウトする
                 }else{
                     $('#page-top').fadeOut('slow');
+                }
+                
+                //minheader
+                if(now > 60){
+                    $('#minheader').css('top','0px');
+                    $('#minheader').slideDown('fast');
+                }else{
+                    $('#minheader').slideUp('fast');
                 }
             });
             //ボタン(id:move-page-top)のクリックイベント

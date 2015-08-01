@@ -42,7 +42,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(30,30,30);
-    background-image: url(../img/bg_tr.png);
+    background-image: url(../img/DSC07300.jpg);
     background-attachment: fixed;
     color: white;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
@@ -57,7 +57,7 @@ body {
 
 #header {
     display: block;
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     z-index: 5000; /* 常に前 */
@@ -270,7 +270,7 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #000;
+    background: black;
     z-index: 1;
 }
 #loader {
@@ -283,6 +283,18 @@ body {
     margin-top: -100px;
     margin-left: -100px;
     text-align: center;
-    color: #fff;
+    color: white;
     z-index: 2;
+}
+
+#minheader {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5001;
+    background-color: black;
+}
+#minheader img {
+    padding-left: 20px;
 }
