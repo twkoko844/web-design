@@ -18,6 +18,9 @@ window.onload = function(){
         $(document).ready(function(){
             /* insert jQuery code */
             
+            //minheader status
+            var before_minheader_status = 0;
+            var now_minheader_status = 0;
             //loading
             var h = $(window).height();
             $('#minheader').css('top','-50px');
@@ -57,12 +60,8 @@ window.onload = function(){
             
             //ボタン[id:page-top]を出現させるスクロールイベント
             $(window).scroll(function(){
-                //最上部から現在位置までの距離を取得して、変数[now]に格納
-                var now = $(window).scrollTop();
-                //最下部から現在位置までの距離を計算して、変数[under]に格納
-                var under = $('body').height() - (now + $(window).height());
-                //最上部から現在位置までの距離(now)が50以上かつ//最下部から現在位置までの距離(under)が0px以上だったら
-                if(now > 50){
+                var scTop = $(window).scrollTop();
+                if(scTop > 50){
                     //[#page-top]をゆっくりフェードインする
                     $('#page-top').fadeIn('slow');
                     //それ以外だったらフェードアウトする
@@ -71,11 +70,19 @@ window.onload = function(){
                 }
                 
                 //minheader
-                if(now > 50){
-                    $('#minheader').animate({top: '0px'},{queue:false, duration: 200});
+                if(scTop > 50){
+                    now_minheader_status = 1;
                 }else{
-                    $('#minheader').animate({top: '-50px'},{queue:false, duration: 200});
+                    now_minheader_status = 0;
                 }
+                if(before_minheader_status != now_minheader_status){
+                    if(now_minheader_status == 1){
+                        $('#minheader').stop().animate({top:"0px"},250);
+                    }else{
+                        $('#minheader').stop().animate({top:"-50px"},250);
+                    }
+                }
+                before_minheader_status = now_minheader_status;
             });
             //ボタン(id:move-page-top)のクリックイベント
             $('#move-page-top').click(function(){
