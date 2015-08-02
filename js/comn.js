@@ -70,7 +70,7 @@ window.onload = function(){
                 }
                 
                 //minheader
-                if(scTop > 50){
+                if(scTop > 100){
                     now_minheader_status = 1;
                 }else{
                     now_minheader_status = 0;

@@ -42,8 +42,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(30,30,30);
-    background-image: url(../img/bokeh-534224_640.jpg);
-    background-attachment: fixed;
+    background: url(../img/bokeh-534224_640_2.jpg) center fixed;
     color: white;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
     font-size: 13px;
@@ -60,45 +59,67 @@ body {
     position: relative;
     top: 0px;
     left: 0px;
+    padding-top: 27px;
     z-index: 5000; /* 常に前 */
     /* border-bottom: 1px solid #878270; */
     background-color: black;
 }
-#header img {
+#header img, #minheader img {
+    float: left;
     padding-left: 20px;
 }
 
-#gnav {
+#gnav, #gminnav {
     display: block;
     /* overflow: hidden; */
+    list-style: none;
     float: right;
     width: 610px;
-    height: 45px;
-    margin: 0;
-    margin-right: 80px;
-    padding: 0;
-    text-align:center;
-}
-#gnav ul {
-    list-style: none;
-    /* overflow: hidden; */   /* liのfloat崩れ解除 */
-    height: 100%;
+    height: 67px;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
-#gnav li {
+#gnav {
+    border-top: 1px solid #666;
+}
+#gnav li, #gminnav li{
     display: block; /* a要素だけの場合 */
     /* display: list-item; /* list要素じゃないものをリストに(画像とか) */
     float: left;
     width: 19%;
     height: 100%;
     font-size: 22px;
-    line-height: 45px; /* 要素と同じ高さ = 45px */
+    line-height: 67px; /* 要素と同じ高さ = 45px */
 }
-#gnav li:hover{
+#gnav li:hover, #gminnav li:hover{
     background-color: rgb(160,160,160);
 }
-#gnav a {
+#gnav a, #gminnav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+#social {
+    float: right;
+    list-style: none;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#social li {
+    display: block;
+    float: left;
+    /* width: 10%; */
+    height: 100%;
+    font-size: 18px;
+    line-height: 55px; /* 要素と同じ高さ */
+}
+#social a {
     display: block;
     width: 100%;
     height: 100%;
@@ -259,17 +280,17 @@ body {
 }
 
 .container {
-    background-color:white;
+    background-color: white;
     color: black;
 }
 
 #loader-bg {
     display: none;
     position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0px;
     left: 0px;
+    width: 100%;
+    height: 100%;
     background: black;
     z-index: 1;
 }
@@ -293,8 +314,12 @@ body {
     top: 0px;
     left: 0px;
     z-index: 5001;
-    background-color: white;
+    background-color: black;
+    color: white;
 }
-#minheader img {
-    padding-left: 20px;
+#gminnav {
+    height: 45px;
+}
+#gminnav li {
+    line-height: 45px; /* 要素と同じ高さ = 45px */
 }
