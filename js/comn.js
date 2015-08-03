@@ -6,7 +6,7 @@
 
 
 function mod_at(){
-    var date=document.lastModified;
+    var date = document.lastModified;
     document.write(date);
 }
 function hello(){
@@ -21,12 +21,14 @@ window.onload = function(){
             //minheader status
             var before_minheader_status = 0;
             var now_minheader_status = 0;
+            
             //loading
             var h = $(window).height();
-            $('#minheader').css('top','-50px');
+            
+            $('#loadbg').css('z-index','5001');  //test
             $('#wrap').css('display','none');
-            $('#loader-bg ,#loader').height(h).css('display','block');
-            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loadbg ,#loader').height(h).css('display','block');
+            $('#loadbg').delay(900).fadeOut(800);
             $('#loader').delay(600).fadeOut(300);
             $('#wrap').css('display', 'block');
             $(function(){
@@ -34,10 +36,9 @@ window.onload = function(){
             });
             function stopload(){
                 $('#wrap, .bx-prev, .bx-next').css('display','block');
-                $('#loader-bg').delay(900).fadeOut(800);
+                $('#loadbg').delay(900).fadeOut(800);
                 $('#loader').delay(600).fadeOut(300);
             }
-            //loading end
             
             //bxslider
             $('.bxslider').bxSlider({
@@ -62,9 +63,7 @@ window.onload = function(){
             $(window).scroll(function(){
                 var scTop = $(window).scrollTop();
                 if(scTop > 50){
-                    //[#page-top]をゆっくりフェードインする
                     $('#page-top').fadeIn('slow');
-                    //それ以外だったらフェードアウトする
                 }else{
                     $('#page-top').fadeOut('slow');
                 }
