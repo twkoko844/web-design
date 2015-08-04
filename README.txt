@@ -19,7 +19,7 @@ Editor:netBeans8.0.2, CotEdidtor2.0.3
 
 2015/01/29: PHP Login
 
-2015/01/30: Add moving description javascript
+2015/01/30: Add description animation javascript
 
 <<<<<<< HEAD
 2015/02/16: Add scroll-top button jquery
@@ -35,4 +35,8 @@ Editor:netBeans8.0.2, CotEdidtor2.0.3
 
 2015/07/25: Add loading
 
-2015/08/03: Add minheader Fix header
+2015/08/01: Change background image
+
+2015/08/03: Add minheader, Fix header
+
+2015/08/04: Fix minheader hovering element animation

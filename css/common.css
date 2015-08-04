@@ -89,10 +89,11 @@ body {
     float: left;
     width: 19%;
     height: 100%;
+    margin-right: 5px;
     font-size: 22px;
     line-height: 67px; /* 要素と同じ高さ = 45px */
 }
-#gnav li:hover, #gminnav li:hover{
+#gnav li:hover{
     background-color: rgb(160,160,160);
 }
 #gnav a, #gminnav a {
@@ -305,21 +306,28 @@ body {
     margin-left: -100px;
     text-align: center;
     color: white;
-    z-index: 2;
 }
 
 #minheader {
     display: block;
     position: fixed;
+    padding-bottom: 5px;
     top: -50px;
     left: 0px;
     z-index: 5000;
     background-color: black;
     color: white;
 }
+
 #gminnav {
     height: 45px;
 }
+
 #gminnav li {
     line-height: 45px; /* 要素と同じ高さ = 45px */
+    border-bottom: 5px black solid;
+}
+
+#gminnav li:hover {
+    border-bottom: 5px gray solid;
 }
