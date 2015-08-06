@@ -312,8 +312,9 @@ body {
     display: block;
     position: fixed;
     padding-bottom: 5px;
-    top: -50px;
+    top: -51px;
     left: 0px;
+    border-bottom: 1px gray solid;
     z-index: 5000;
     background-color: black;
     color: white;

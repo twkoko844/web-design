@@ -78,7 +78,7 @@ window.onload = function(){
                     if(now_minheader_status == 1){
                         $('#minheader').stop().animate({top:"0px"},250);
                     }else{
-                        $('#minheader').stop().animate({top:"-50px"},250);
+                        $('#minheader').stop().animate({top:"-51px"},250);
                     }
                 }
                 before_minheader_status = now_minheader_status;
