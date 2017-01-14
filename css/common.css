@@ -44,12 +44,16 @@ body {
     background-color: rgb(30,30,30);
     background: url(../img/bokeh-534224_640_2.jpg) center fixed;
     color: white;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', '游ゴシック', YuGothic, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
     font-size: 13px;
 }
 
+/*#wrap {
+    display: none;
+}*/
+
 .gwrapper {
-    width: 100%;
+    width: 100%;z
     min-width: 1040px;
     margin: 0 auto;
 }
