@@ -4,41 +4,23 @@
  * and open the template in the editor.
  */
 
+/*-- global variables --*/
+//minheader status
+var before_minheader_status = 0;
+var now_minheader_status = 0;
+/*----------------------*/
+
+function hello(){
+    document.write("Hello js World!");
+}
 
 function mod_at(){
     var date = document.lastModified;
     document.write(date);
 }
-function hello(){
-    document.write("Hello js World!");
-}
 
 $(document).ready(function(){
-    /* insert jQuery code */
-
-    //minheader status
-    var before_minheader_status = 0;
-    var now_minheader_status = 0;
-    //loading
-    var h = $(window).height();
-    var dilaytime = 1000  //1000ms
-    $('#loadbg').css('z-index','5001');  //test
-    $('#wrap').css('display','none');
-    $('#loadbg ,#loader').height(h).css('display','block');
-    $('#loadbg').delay(dilaytime).fadeOut(1000);
-    $('#loader').delay(dilaytime).fadeOut(500);
-    $('#wrap').fadeIn();
-    $(function(){
-        setTimeout('stopload()',10000);
-    });
-    function stopload(){
-        $('#wrap, .bx-prev, .bx-next').css('display','block');
-        $('#loadbg').delay(dilaytime).fadeOut(1000);
-        $('#loader').delay(dilaytime).fadeOut(500);
-    }
-});//document ready end
-
-window.onload = function(){
+    
     //bxslider
     $('.bxslider').bxSlider({
         auto: true,
@@ -46,6 +28,23 @@ window.onload = function(){
         speed: 800,
         autoControls: true
     });
+
+    //loading
+    var delaytime = 1000  //1000ms
+    function stopload(){
+        $('#wrap, .bx-prev, .bx-next').css('display','block');
+        $('#loadbg').delay(delaytime).fadeOut(1000);
+        $('#loader').delay(delaytime).fadeOut(500);
+    }
+    $('#loadbg').css('z-index','5001');  //test
+    $('#wrap').css('display','none');
+    $('#loadbg ,#loader').height($(window).height()).css('display','block');
+    stopload();
+    $('#wrap').fadeIn();
+    $(function(){
+        setTimeout('stopload()',10000);
+    });
+
     //description animation
     $('.list-box > li').hover(function(){   //id=list-boxの子要素のliを取得,hoverした時にfunction
         $(".description", this).stop().animate(     //class=descriptionのアニメーション
@@ -55,32 +54,36 @@ window.onload = function(){
                 $(".description", this).stop().animate(     //hoverでないとき
                     {bottom:'-80px'},                       //li要素-80PXで止める
                     {queue:false,duration:160}              //キュー無効, アニメーション早さ0.16s
-                );
+                    );
     });
-    //ボタン[id:page-top]を出現させるスクロールイベント
+
+    //scroll events
     $(window).scroll(function(){
         var scTop = $(window).scrollTop();
-        if(scTop > 50){
-            $('#page-top').fadeIn('slow');
-        }else{
-            $('#page-top').fadeOut('slow');
-        }
+
         //minheader
+        console.log(scTop);
         if(scTop > 100){
             now_minheader_status = 1;
         }else{
             now_minheader_status = 0;
-        }
-        if(before_minheader_status != now_minheader_status){
+        }if(before_minheader_status != now_minheader_status){
             if(now_minheader_status == 1){
                 $('#minheader').stop().animate({top:"0px"},250);
             }else{
                 $('#minheader').stop().animate({top:"-51px"},250);
             }
         }
-                before_minheader_status = now_minheader_status;
+        before_minheader_status = now_minheader_status;
+
+        //ボタン[id:page-top]を出現させるスクロールイベント
+        if(scTop > 50){
+            $('#page-top').fadeIn('slow');
+        }else{
+            $('#page-top').fadeOut('slow');
+        }
     });
-    //ボタン(id:move-page-top)のクリックイベント
+    //ボタン[id:move-page-top]のクリックイベント
     $('#move-page-top').click(function(){
         //ページトップへ移動する
         $('html,body').animate({scrollTop:0},'fast');
@@ -89,4 +92,5 @@ window.onload = function(){
     $('#move-page-footer').click(function(){
         $('html,body').animate({scrollTop:$('body').height()},'fast');
     });
-};//onload end
+
+});//document ready end
