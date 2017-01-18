@@ -8,6 +8,11 @@ Editor:sakuraEditor
 
 Editor:netBeans8.0.2, CotEdidtor2.0.3
 
+↓
+
+Browser:chrome
+Editor:Sublime Text2
+
 --Update--
 2015/01/25: Start this project.
 
