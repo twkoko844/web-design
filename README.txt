@@ -40,3 +40,5 @@ Editor:netBeans8.0.2, CotEdidtor2.0.3
 2015/08/03: Add minheader, Fix header
 
 2015/08/04: Fix minheader hovering element animation
+
+2017/01/18: Fix js load timing
