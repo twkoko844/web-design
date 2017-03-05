@@ -62,7 +62,6 @@ $(document).ready(function(){
         var scTop = $(window).scrollTop();
 
         //minheader
-        console.log(scTop);
         if(scTop > 100){
             now_minheader_status = 1;
         }else{

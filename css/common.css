@@ -191,8 +191,8 @@ body {
     /* margin-top: 5px; */
     border-top: white solid 1px; 
     padding-bottom: 10px;
-    background-color: #eee; /* #868170 rgb(134,129,112); */
-    color: #333;
+    background-color: rgb(134,129,112); /* #868170 rgb(134,129,112); */
+    /* color: #33; */
 }
 #footer p {
     margin: 0;
